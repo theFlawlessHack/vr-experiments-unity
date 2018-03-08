@@ -6,6 +6,7 @@ public class Player : MonoBehaviour {
 
     public float speed = 0.5f;
     public Vector3 castlePosition;
+    public bool enteredCastle;
 
     private Vector3 targetPosition;
 
@@ -41,5 +42,6 @@ public class Player : MonoBehaviour {
 
     private void MoveToCastle() {
         targetPosition = castlePosition;
+        enteredCastle = true;
     }
 }
